@@ -37,10 +37,10 @@
 
             display-name = "Lower";
             bindings = <
-&none       &none         &none           &kp UP_ARROW    &kp N4           &none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &none      &kp BSPC
+&none       &none         &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS   &kp BACKSLASH
 &bt BT_CLR  &bt BT_SEL 0  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 4    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp LC(Z)  &kp LC(V)
-&kp LSHFT   &kp LA(F4)    &trans          &trans          &trans           &trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp LC(C)  &kp LC(X)
-                                          &kp LGUI        &trans           &kp SPACE       &kp RET       &trans        &kp RALT
+&kp LSHFT   &kp LA(F4)    &kp PAGE_DOWN   &trans          &kp END          &trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp LC(C)  &kp LC(X)
+                                          &kp LGUI        &trans           &kp SPACE       &kp RET       &trans        &kp DELETE
             >;
         };
 
