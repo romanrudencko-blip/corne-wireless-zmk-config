@@ -23,7 +23,7 @@
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI  &kp RIGHT_BRACKET
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp GRAVE
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp SQT
                               &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
             >;
         };
@@ -39,7 +39,7 @@
             bindings = <
 &bt BT_CLR_ALL    &bt BT_SEL 0  &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp LC(P)            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS   &kp BACKSLASH
 &kp LEFT_SHIFT    &bt BT_SEL 1  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(A)            &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp LC(Z)  &kp LC(X)
-&kp LEFT_CONTROL  &bt BT_SEL 2  &kp PAGE_DOWN   &trans          &kp END          &kp LC(S)            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp LC(C)  &kp LC(V)
+&kp LEFT_CONTROL  &bt BT_SEL 2  &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &kp LC(S)            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp LC(C)  &kp LC(V)
                                                 &mo 3           &trans           &kp LS(LC(SPACE))    &kp RET       &trans        &kp DELETE
             >;
         };
@@ -69,10 +69,10 @@
 
             display-name = "ext1";
             bindings = <
-&kp TAB    &kp F1   &kp F2   &kp F3    &kp F4  &kp F5       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
-&kp LCTRL  &kp F6   &kp F7   &kp F8    &kp F9  &kp F10      &kp DOLLAR       &kp PERCENT   &kp CARET             &none                  &none  &none
-&kp LSHFT  &kp F11  &kp F12  &none     &none   &none        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
-                             &kp LGUI  &trans  &kp SPACE    &kp RET          &trans        &kp RALT
+&bt BT_CLR_ALL  &bt BT_SEL 0  &kp F2   &kp F3    &kp F4     &kp C_VOL_UP    &kp C_BRI_UP  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
+&kp LCTRL       &bt BT_SEL 1  &kp F7   &kp F8    &kp F9     &kp C_VOL_DN    &kp C_BRI_DN  &kp PERCENT   &kp CARET             &none                  &none  &none
+&kp LSHFT       &bt BT_SEL 2  &kp F12  &none     &kp LG(L)  &kp K_MUTE      &kp LG(L)     &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
+                                       &kp LGUI  &trans     &kp SPACE       &kp RET       &trans        &kp RALT
             >;
         };
 
