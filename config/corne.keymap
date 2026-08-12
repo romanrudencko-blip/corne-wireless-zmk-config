@@ -60,9 +60,37 @@
             >;
         };
 
-        extra_1 { status = "reserved"; };
+        extra_1 {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-        extra_2 { status = "reserved"; };
+            display-name = "Raise";
+            bindings = <
+&kp TAB    &kp F1   &kp F2   &kp F3    &kp F4  &kp F5       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
+&kp LCTRL  &kp F6   &kp F7   &kp F8    &kp F9  &kp F10      &kp DOLLAR       &kp PERCENT   &kp CARET             &none                  &none  &none
+&kp LSHFT  &kp F11  &kp F12  &none     &none   &none        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
+                             &kp LGUI  &trans  &kp SPACE    &kp RET          &trans        &kp RALT
+            >;
+        };
+
+        extra_2 {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Raise";
+            bindings = <
+&kp TAB    &kp F1   &kp F2   &kp F3    &kp F4  &kp F5       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
+&kp LCTRL  &kp F6   &kp F7   &kp F8    &kp F9  &kp F10      &kp DOLLAR       &kp PERCENT   &kp CARET             &none                  &none  &none
+&kp LSHFT  &kp F11  &kp F12  &none     &none   &none        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
+                             &kp LGUI  &trans  &kp SPACE    &kp RET          &trans        &kp RALT
+            >;
+        };
 
         extra_3 { status = "reserved"; };
     };
