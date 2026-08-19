@@ -81,7 +81,7 @@
 &bt BT_CLR_ALL  &bt BT_SEL 0  &kp F2   &kp F3      &kp F4     &kp C_VOL_UP    &kp C_BRI_UP  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
 &kp LCTRL       &bt BT_SEL 1  &kp F7   &kp F8      &kp F9     &kp C_VOL_DN    &kp C_BRI_DN  &kp PERCENT   &kp CARET             &none                  &none  &none
 &kp LSHFT       &bt BT_SEL 2  &kp F12  &new_macro  &kp LG(L)  &kp K_MUTE      &kp LG(L)     &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
-                                       &kp LGUI    &trans     &kp SPACE       &kp RET       &trans        &kp RALT
+                                       &trans      &trans     &kp SPACE       &kp RET       &trans        &kp RALT
             >;
         };
 
