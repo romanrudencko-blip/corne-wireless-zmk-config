@@ -13,7 +13,7 @@
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(LEFT_SHIFT) &kp EXCL &kp LS(Q) &kp LS(A) &kp LS(Z) &kp X &kp S &kp W &kp N2 &kp N7 &kp ENTER>;
+            bindings = <&kp LS(LEFT_CONTROL) &kp EXCL &kp LS(Q) &kp LS(A) &kp LS(Z) &kp X &kp S &kp W &kp N2 &kp N7 &kp ENTER>;
             label = "NEW_MACRO";
         };
     };
@@ -46,10 +46,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp LC(P)            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS   &kp BACKSLASH
-&kp LEFT_SHIFT    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(A)            &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp LC(Z)  &kp LC(X)
-&kp LEFT_CONTROL  &none  &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &kp LC(S)            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp LC(C)  &kp LC(V)
-                                         &mo 3           &trans           &kp LS(LC(SPACE))    &kp RET       &trans        &kp DELETE
+&kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp GRAVE               &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS   &kp BACKSLASH
+&kp LEFT_SHIFT    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp NON_US_BACKSLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp SLASH  &none
+&kp LEFT_CONTROL  &none  &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &none                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp COMMA  &kp PERIOD
+                                         &mo 3           &trans           &kp LS(LC(SPACE))       &kp RET       &trans        &kp DELETE
             >;
         };
 
@@ -62,10 +62,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
-&kp LCTRL  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10      &kp DOLLAR       &kp PERCENT   &kp CARET             &none                  &none  &none
-&kp LSHFT  &kp F11  &kp F12  &none   &none   &none        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
-                             &trans  &trans  &kp SPACE    &kp RET          &trans        &kp RALT
+&kp ESCAPE   &kp LG(LS(S))  &kp F2     &kp F3     &kp F4     &kp F5       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp LA(TAB)  &kp LC(A)      &kp LC(S)  &kp LC(P)  &kp LC(N)  &kp F10      &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS               &kp LESS_THAN   &kp GREATER_THAN
+&kp LSHFT    &kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &none        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_EQUAL           &none           &none
+                                       &trans     &trans     &kp SPACE    &kp RET          &trans        &kp RALT
             >;
         };
 
@@ -78,29 +78,11 @@
 
             display-name = "ext1";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F4     &kp C_VOL_UP    &kp C_BRI_UP  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
-&kp LCTRL       &none         &kp F7        &kp F8        &kp F9     &kp C_VOL_DN    &kp C_BRI_DN  &kp PERCENT   &kp CARET             &none                  &none  &none
-&kp LSHFT       &none         &kp F12       &new_macro    &kp LG(L)  &kp C_MUTE      &kp LG(L)     &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
-                                            &trans        &trans     &kp SPACE       &kp RET       &trans        &kp RALT
+&bt BT_CLR_ALL    &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp C_VOL_UP    &kp C_BRI_UP  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
+&kp K_CALCULATOR  &kp C_AL_WORD      &kp EXSEL     &none         &none         &kp C_VOL_DN    &kp C_BRI_DN  &kp PERCENT   &kp CARET             &none                  &none  &none
+&kp K_EXEC        &kp K_APPLICATION  &kp F12       &new_macro    &kp LG(L)     &kp C_MUTE      &kp LG(L)     &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
+                                                   &trans        &trans        &kp SPACE       &kp RET       &trans        &kp LC(BACKSPACE)
             >;
         };
-
-        extra_2 {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "ext2";
-            bindings = <
-&kp TAB    &kp F1   &kp F2   &kp F3    &kp F4  &kp F5       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
-&kp LCTRL  &kp F6   &kp F7   &kp F8    &kp F9  &kp F10      &kp DOLLAR       &kp PERCENT   &kp CARET             &none                  &none  &none
-&kp LSHFT  &kp F11  &kp F12  &none     &none   &none        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
-                             &kp LGUI  &trans  &kp SPACE    &kp RET          &trans        &kp RALT
-            >;
-        };
-
-        extra_3 { status = "reserved"; };
     };
 };
