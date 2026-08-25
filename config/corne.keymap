@@ -78,10 +78,10 @@
 
             display-name = "ext1";
             bindings = <
-&bt BT_CLR_ALL    &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp C_VOL_UP    &kp C_BRI_UP  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &none  &none
-&kp K_CALCULATOR  &kp C_AL_WORD      &kp EXSEL     &none         &none         &kp C_VOL_DN    &kp C_BRI_DN  &kp PERCENT   &kp CARET             &none                  &none  &none
-&kp K_EXEC        &kp K_APPLICATION  &kp F12       &new_macro    &kp LG(L)     &kp C_MUTE      &kp LG(L)     &kp ASTERISK  &kp LEFT_PARENTHESIS  &none                  &none  &none
-                                                   &trans        &trans        &kp SPACE       &kp RET       &trans        &kp LC(BACKSPACE)
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp C_VOL_UP    &kp C_BRI_UP  &none   &none              &none  &none  &none
+&none           &none         &none         &none         &none         &kp C_VOL_DN    &kp C_BRI_DN  &none   &none              &none  &none  &none
+&none           &none         &none         &new_macro    &kp LG(L)     &kp C_MUTE      &none         &none   &none              &none  &none  &none
+                                            &trans        &trans        &kp SPACE       &kp RET       &trans  &kp LC(BACKSPACE)
             >;
         };
     };
