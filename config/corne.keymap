@@ -62,10 +62,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESCAPE   &kp LG(LS(S))  &none      &none      &none      &none        &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp LA(TAB)  &kp LC(A)      &kp LC(S)  &kp LC(P)  &kp LC(N)  &none        &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS               &kp LESS_THAN   &kp GREATER_THAN
-&kp LSHFT    &kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &none        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_EQUAL           &none           &none
-                                       &trans     &trans     &kp SPACE    &kp RET          &trans        &kp RALT
+&kp ESCAPE   &kp LG(LS(S))  &kp RS(RA(D))  &kp LC(L)  &kp LC(E)  &kp LC(R)    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp LA(TAB)  &kp LC(A)      &kp LC(S)      &kp LC(P)  &kp LC(N)  &kp LC(J)    &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS               &kp LESS_THAN   &kp GREATER_THAN
+&kp LSHFT    &kp LC(Z)      &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp LC(H)    &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_EQUAL           &none           &none
+                                           &trans     &trans     &kp SPACE    &kp RET          &trans        &kp RALT
             >;
         };
 
