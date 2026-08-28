@@ -47,8 +47,8 @@
             display-name = "Lower";
             bindings = <
 &kp TAB           &none  &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp GRAVE               &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS   &kp BACKSLASH
-&kp LEFT_SHIFT    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp NON_US_BACKSLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp SLASH  &none
-&kp LEFT_CONTROL  &none  &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &none                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp COMMA  &kp PERIOD
+&kp LEFT_SHIFT    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp NON_US_BACKSLASH    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp COMMA  &none
+&kp LEFT_CONTROL  &none  &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &none                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp SLASH  &kp PERIOD
                                          &mo 3           &trans           &kp LS(LC(SPACE))       &kp RET       &trans        &kp DELETE
             >;
         };
