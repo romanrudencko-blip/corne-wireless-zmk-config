@@ -46,9 +46,9 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &kp GRAVE             &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp LC(HOME)         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS   &kp BACKSLASH
-&kp LEFT_SHIFT    &kp NON_US_BACKSLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(DELETE)       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp COMMA  &kp DOT
-&kp LEFT_CONTROL  &none                 &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &kp LC(END)          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp SLASH  &none
+&kp TAB           &kp GRAVE             &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp LC(HOME)         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS       &kp NON_US_BACKSLASH
+&kp LEFT_SHIFT    &kp NON_US_BACKSLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(DELETE)       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp COMMA      &kp DOT
+&kp LEFT_CONTROL  &kp LS(LEFT_ALT)      &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &kp LC(END)          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp BACKSLASH  &kp SLASH
                                                         &mo 3           &trans           &kp LS(LC(SPACE))    &kp RET       &trans        &kp DELETE
             >;
         };
@@ -62,10 +62,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESCAPE   &kp LG(LS(S))  &kp RS(RA(D))  &kp LC(L)  &kp LC(E)  &kp LC(R)    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp LA(TAB)  &kp LC(A)      &kp LC(S)      &kp LC(P)  &kp LC(N)  &kp LC(J)    &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS               &kp LESS_THAN   &kp GREATER_THAN
-&kp LSHFT    &kp LC(Z)      &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp LC(H)    &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_EQUAL           &none           &none
-                                           &trans     &trans     &kp SPACE    &kp RET          &trans        &kp RALT
+&kp LG(L)  &kp LG(LS(S))  &kp RS(RA(D))  &kp LC(L)  &kp LC(E)  &kp LC(R)    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp TAB    &kp LC(A)      &kp LC(S)      &kp LC(P)  &kp LC(N)  &kp LC(J)    &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS               &kp LESS_THAN   &kp GREATER_THAN
+&kp LSHFT  &kp LC(Z)      &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp LC(H)    &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp KP_EQUAL           &kp BACKSLASH   &kp SLASH
+                                         &trans     &trans     &kp SPACE    &kp RET          &trans        &kp RALT
             >;
         };
 
