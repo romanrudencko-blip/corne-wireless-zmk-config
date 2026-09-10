@@ -23,12 +23,7 @@
             label = "NEW_MACRO";
         };
 
-        pipe: pipe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp z>;
-            label = "PIPE";
-        };
+        
     };
 
     keymap {
@@ -59,7 +54,7 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &kp GRAVE             &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp LC(HOME)         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS       &pipe
+&kp TAB           &kp GRAVE             &kp PAGE_UP     &kp UP_ARROW    &kp HOME         &kp LC(HOME)         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PLUS       &none
 &kp LEFT_SHIFT    &kp NON_US_BACKSLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(DELETE)       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp COMMA      &kp DOT
 &kp LEFT_CONTROL  &kp LS(LEFT_ALT)      &kp PAGE_DOWN   &kp CAPSLOCK    &kp END          &kp LC(END)          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL     &kp BACKSLASH  &kp SLASH
                                                         &mo 3           &trans           &kp LS(LC(SPACE))    &kp RET       &trans        &kp DELETE
