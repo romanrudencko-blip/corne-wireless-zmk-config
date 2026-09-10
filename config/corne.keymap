@@ -15,8 +15,17 @@
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp UC(0x0051)>, <&kp UC(0x0041)>, <&kp UC(0x005a)>, <&kp UC(0x0078)>, 
-            <&kp UC(0x0073)>, <&kp UC(0x0077)>, <&kp UC(0x0032)>, <&kp UC(0x0037)>, <&kp ENTER>;
+            bindings = 
+                <&kp EXCL>, 
+                <&kp UC(0x0051)>, 
+                <&kp UC(0x0041)>, 
+                <&kp UC(0x005a)>, 
+                <&kp UC(0x0078)>, 
+                <&kp UC(0x0073)>, 
+                <&kp UC(0x0077)>,
+                <&kp UC(0x0032)>, 
+                <&kp UC(0x0037)>,
+                <&kp ENTER>;
             label = "NEW_MACRO";
         };
 
